@@ -1,0 +1,141 @@
+<ion-view class="highway_page">
+  
+  <ion-header-bar class="header_bar">
+    <button class="button button-icon button-clear icon ion-chevron-left" id="btnBack" ng-click="goBack()">
+    </button>
+
+    <div class="h1 title">
+      TRAFFICJAM
+    </div>
+
+    <button class="button button-icon button-clear ion-loop pull-right" id="btnRefresh" ng-click="refresh()">
+    </button>
+
+    <button class="button button-icon button-clear ion-ios-gear-outline pull-right" id="btnSetting" ng-click="goSetting()">
+    </button>
+
+  </ion-header-bar>
+
+  <ion-content style="">
+
+    <ion-refresher
+      pulling-text="Wird aktualisiert..."
+      on-refresh="doRefresh()">
+    </ion-refresher>
+    <ion-list>
+      <div class="row row1">
+        <div>Sie fahren aktuell auf der</div>
+        <div class="street_no">7</div>
+      </div>
+
+      <div class="row row2">
+        <div class="col-50">
+          <a href="#">
+            <div class="cube">
+              <div class="row">
+                <div class="col col-25"style="text-align: left;">7km</div>
+                <div class="col col-75" style="text-align: right;">1.5 km ab AS 35</div>
+              </div>
+
+              <div class="row" style="text-align:center; display:inline-block; padding: 10px;">
+                <label class="price">1.389</label>
+              </div>
+
+              <div class="row" style="text-align:center; display:inline-block;">
+                <div style="color:#909090;">Nachste auf der Autobahn</div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-50">
+          <a href="#">
+            <div class="cube" style="text-align: center;">
+              <div class="row">
+                <div class="col col-25"style="text-align: left;">7km</div>
+                <div class="col col-75" style="text-align: right;">1.5 km ab AS 35</div>
+              </div>
+
+              <div class="row" style="text-align:center; display:inline-block; padding: 10px;">
+                <label class="price">1.259</label>
+              </div>
+
+              <div class="row" style="text-align:center; display:inline-block;">
+                <div style="color:#909090;">Nachste in Autobahnnahe</div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div style="display:inline-block; width: 100%; height:30px;">
+        <div class="row" href="#" style="background-color: #242424; height: 26px;">
+          <div class="col col-25" style="border-right:2px solid #090909">
+            <div class="price_sort" style="text-align:center;">
+              EUR <i class="icon ion-arrow-down-b" style="margin-left: 10px;"></i>
+            </div>
+          </div>
+
+          <div class="col col-50"></div>
+
+          <div class="col col-25" style="border-left:2px solid #090909;">
+            <div class="km_sort" style="text-align:center;">
+              km <i class="icon ion-arrow-down-b" style="margin-left: 10px;"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- JAM List -->
+
+      <ion-item class="jam_list" ng-repeat="item in items">
+        <a class="row" href="#">
+          <div class="col col-25" style="border-right:2px solid #505050; text-align:center;">
+            <div style="font-weight:bold; font-size:150%;">1.259</div>
+            <div class="icon ion-ios-star" style="color:#E47E25; margin-top:5px; "></div>
+            <div style="font-size:90%; color: #909090; position:absolute; bottom:5px; width:24%; overflow:hidden;">vor 1 Std</div>
+          </div>
+
+          <div class="col col-50" style="font-size:90%; overflow:hidden;">
+            <div class="row" style="padding:0px;">
+              <div class="col col-75"style="font-weight:bold; text-align: left; padding:0px;"><div class="street_no">7</div>1.5 km ab AS 35</div>
+              <div class="col col-25" style="font-weight:bold; text-align: right; padding:0px;">7km</div>
+            </div>
+
+            <div class="row" style="margin-top:10px; font-weight:bold; ">
+              ESSO
+            </div>
+
+            <div class="row" style="color: #909090; position:absolute; overflow:hidden; width:46%; bottom:5px;">
+              Seevetal, Jesteburger StraBe Koert Heroke
+            </div>
+          </div>
+
+          <div class="col col-25" style="font-size:90%; text-align:right; font-weight:bold;">
+            <div style="margin-right:20px;">15km</div>
+            <i class="icon ion-chevron-right" style="margin-top: 20px;"></i>
+          </div>
+        </a>
+      </ion-item>
+    </ion-list>
+
+  </ion-content>
+
+  <div class="bar bar-footer">
+    <button class="button button-icon button-clear icon ion-chevron-left" id="btnLeft" ng-click="goLeft()">
+    </button>
+
+    <div class="title">
+      <div class="page_title">Autobahn</div>
+      <div class="pager_box">
+        <a href="#" class="pager active"></a>
+        <a href="#" class="pager"></a>
+        <a href="#" class="pager"></a>
+      </div>
+    </div>
+
+    <button class="button button-icon button-clear icon ion-chevron-right" id="btnRight" ng-click="goRight()">
+    </button>
+  </div>
+  
+</ion-view>
