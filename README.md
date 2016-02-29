@@ -1,3 +1,5 @@
+# realstir
+
 <img src="https://github.com/onlystar1991/realstir/blob/master/screenshot1.png" width="30%" />
 <img src="https://github.com/onlystar1991/realstir/blob/master/screenshot2.png" width="30%" />
 
@@ -8,5 +10,4 @@ We’ve qualified their posts to rank the best and now you receive important and
 Get the inside track, tips, how to’s, and updates via your selected newsfeed. 
 We’re here to help your journey with valued content. Buyers, Sellers, Renters want accurate 
 
-# realstir
 Skill sets: Angularjs, Ionic framework, cordova-plugin-camera, Push Notification, cordova-plugin-inapppurchase
